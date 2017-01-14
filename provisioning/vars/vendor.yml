@@ -1,0 +1,26 @@
+# Apache
+apache_create_vhosts: false
+apache_remove_default_vhost: true
+apache_mods_enabled:
+  - rewrite.load
+  - deflate.load
+  - expires.load
+  - headers.load
+
+# Php
+php_memory_limit: "128M"
+php_upload_max_filesize: "256M"
+php_max_execution_time: "90"
+php_version: "5.6"
+php_packages:
+  - php
+  - php-mcrypt
+  - php-cli
+  - php-common
+  - php-curl
+  - php-dev
+  - php-fpm
+  - php-gd
+  - php-xml
+  - php-mbstring
+  - php-json

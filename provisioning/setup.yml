@@ -1,0 +1,6 @@
+---
+- name: Install Ansible Galaxy roles
+  hosts: all
+  tasks:
+    - command: chdir=/vagrant ansible-galaxy install -r provisioning/requirements.yml
+                                         

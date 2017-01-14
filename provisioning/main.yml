@@ -1,0 +1,15 @@
+---
+- name: install vendor packages
+  hosts: all
+  become: yes
+  become_user: root
+  vars_files:
+    - vars/vendor.yml
+  roles:
+    - geerlingguy.apache
+    - geerlingguy.php
+  tasks:       
+    - name: install joe
+      apt: pkg=joe state=installed update_cache=yes state=latest
+    - name: install unzip
+      apt: pkg=unzip state=installed update_cache=yes state=latest
