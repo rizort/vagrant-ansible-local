@@ -1,6 +1,4 @@
 #
-# to install from root dir: ansible-galaxy install -r provisioning/requirements.yml
-#
 - src: geerlingguy.apache
 - src: geerlingguy.php
 
